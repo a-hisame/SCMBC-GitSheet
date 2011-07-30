@@ -37,6 +37,12 @@
    <tr><td>コンフリクト！ もう一度pull</td><td>git pull</td></tr>
    <tr><td>オートコンフリクト修正に失敗した場合はファイルを直す</td>
 	<td>git add [conflict file] / git commit</td></tr>
+   <tr><td>コンフリクトを起こしたけどマージを終了したい！</td>
+	<td>git merge --abort</td></tr>
+   <tr><td>特定のブランチに移動(現在の変更を破棄する。SVNのrevert</td>
+	<td>git reset --hard origin/development</td></tr>
+   <tr><td>ブランチをpush（localのbranchをremoteのbranchに設定)</td>
+	   <td>git push origin development:master (local:development を origin:masterにpush)</td></tr>
  </table>
  <table>
    <tr>
@@ -53,13 +59,40 @@
    </tr>
  </table>
  <table>
-  <tr>
-   <td>情報</td>
-  </tr>
-  <tr>
-   <td></td>
-  </tr>
+   <tr>
+     <th colspan="2" align="left">ファイル操作</th>
+   </tr>
+   <tr>
+     <td>ファイルをレポジトリの管理対象に追加する</td><td>git add ファイル名</td>
+   </tr>
+   <tr>
+     <td>ファイルをレポジトリの管理対象に追加を取りやめる</td><td>git rm --cached ファイル名</td>
+   </tr>
+   <tr>
+     <td>ファイルをローカルレポジトリの最新の状態にする</td><td>git co HEAD ファイル名</td>
+   </tr>
+   <tr>
+     <td>ファイルを移動する</td><td>git mv 古いファイル名 新しいファイル名</td>
+   </tr>
+   <tr>
+     <td>ファイルをレポジトリの管理対象から外す</td><td>git rm ファイル名</td>
+   </tr>
  </table>
+ <table>
+   <tr>
+     <th colspan="2" align="left">プッシュ操作</th>
+   </tr>
+   <tr>
+     <td>ブランチの変更をリモートレポジトリに反映する</td><td>git push リモート名 ブランチ名</td>
+   </tr>
+   <tr>
+     <td>ブランチの変更をリモートレポジトリに反映する</td><td>git push リモート名 ブランチ名</td>
+   </tr>
+   <tr>
+     <td>リモートレポジトリからブランチを削除</td><td>git push リモート名 :ブランチ名</td>
+   </tr>
+ </table>
+
 <p style="font-size:1.5em;">概念</p>
 
 <table>
