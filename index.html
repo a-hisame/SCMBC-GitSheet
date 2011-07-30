@@ -43,6 +43,11 @@
 	<td>git reset --hard origin/development</td></tr>
    <tr><td>ブランチをpush（localのbranchをremoteのbranchに設定)</td>
 	   <td>git push origin development:master (local:development を origin:masterにpush)</td></tr>
+   <tr><td>特定のブランチを切る</td>
+	   <td>git branch rebase_test development</td></tr>
+   <tr><td>コンフリクトを起こす場合、元のブランチで更新をかける</td>
+	   <td>git checkout development / git pull</td></tr>
+   <tr><td>移動させたいブランチに移動し、そのブランチを追加したいブランチを指定することでrebaseする。</td><td>git checkout rebase_test / git rebase development</td></tr>
  </table>
  <table>
   <tr><td>情報</td></tr>
