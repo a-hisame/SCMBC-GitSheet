@@ -13,6 +13,7 @@
 <table>
 <tr><th colspan="2" align="left">概念</th></tr>
 <tr><td>ブランチ</td><td>よくわからない。</td></tr>
+<tr><td>ブランチ</td><td>よくわかった！</td></tr>
 <tr><td>テスト</td><td>@kokmt</td></tr>
 </table>
 <div>
@@ -31,6 +32,25 @@
    <tr><td>ローカルにGitHubのブランチをコピー</td>
       <td>git branch development origin/development</td></tr>
    <tr><td>ブランチを移動</td><td>git checkout development</td></tr>
+   <tr><td>ファイルを作る。add/commit</td><td>git add * / git commit *</td></tr>
+   <tr><td>コミットをpush</td><td>git push origin development</td></tr>
+   <tr><td>コンフリクト！ もう一度pull</td><td>git pull</td></tr>
+   <tr><td>オートコンフリクト修正に失敗した場合はファイルを直す</td>
+	<td>git add [conflict file] / git commit</td></tr>
+ </table>
+ <table>
+   <tr>
+     <th colspan="2" align="left">バージョン管理</th>
+   </tr>
+   <tr>
+     <td>変更をコミットする</td><td>git commit -a</td>
+   </tr>
+   <tr>
+     <td>ひとつ前のコミットをチェックアウトする</td><td>git co HEAD^</td>
+   </tr>
+   <tr>
+     <td>変更を元に戻す</td><td>git reset HEAD --hard</td>
+   </tr>
  </table>
 </div>
 </body>
