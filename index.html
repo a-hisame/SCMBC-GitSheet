@@ -41,6 +41,8 @@
 	<td>git merge --abort</td></tr>
    <tr><td>特定のブランチに移動(現在の変更を破棄する。SVNのrevert</td>
 	<td>git reset --hard origin/development</td></tr>
+   <tr><td>ブランチをpush（localのbranchをremoteのbranchに設定)</td>
+	   <td>git push origin development:master (local:development を origin:masterにpush)</td></tr>
  </table>
  <table>
    <tr>
@@ -86,6 +88,32 @@
      <td>ファイルをレポジトリの管理対象から外す</td><td>git rm ファイル名</td>
    </tr>
  </table>
+ <table>
+   <tr>
+     <th colspan="2" align="left">プッシュ操作</th>
+   </tr>
+   <tr>
+     <td>ブランチの変更をリモートレポジトリに反映する</td><td>git push リモート名 ブランチ名</td>
+   </tr>
+   <tr>
+     <td>ブランチの変更をリモートレポジトリに反映する</td><td>git push リモート名 ブランチ名</td>
+   </tr>
+   <tr>
+     <td>リモートレポジトリからブランチを削除</td><td>git push リモート名 :ブランチ名</td>
+   </tr>
+ </table>
+ <table>
+   <tr>
+     <th colspan="2" align="left">マージ操作</th>
+   </tr>
+   <tr>
+     <td>カレントブランチにローカルブランチをマージする</td><td>git merge ブランチ名</td>
+   </tr>
+   <tr>
+     <td>カレントブランチにリモートブランチをマージする</td><td>git pull リモート名 ブランチ名</td>
+   </tr>
+ </table>
+
 
 <p style="font-size:1.5em;">概念</p>
 
@@ -113,22 +141,26 @@ a
 
 <p style="font-size:1.5em;">サポートするURLのプレフィックス</p>
 <table>
-
-<tr>
-<td>(単語をここに記述)</td>
-<td>：(意味の意味をここに記述)</td>
-</tr>
-
-<tr>
-<td>(単語をここに記述)</td>
-<td>：(意味の意味をここに記述)</td>
-</tr>
-
-<tr>
-<td>(単語をここに記述)</td>
-<td>：(意味の意味をここに記述)</td>
-</tr>
-
+  <tr>
+    <td>ssh://[user@]host.xz[:port]/path/to/repo.git/</td>
+    <td>ssh経由でのレポジトリへのアクセス</td>
+  </tr>
+  <tr>
+    <td>git://host.xz[:port]/path/to/repo.git/</td>
+    <td>gitプロトコル(デフォルト9418番)でのレポジトリへのアクセス</td>
+  </tr>
+  <tr>
+    <td>http[s]://host.xz[:port]/path/to/repo.git/</td>
+    <td>http[s]プロトコルでのレポジトリへのアクセス</td>
+  </tr>
+  <tr>
+    <td>ftp[s]://host.xz[:port]/path/to/repo.git/</td>
+    <td>ftp[s]プロトコルでのレポジトリへのアクセス</td>
+  </tr>
+  <tr>
+    <td>rsync://host.xz/path/to/repo.git/</td>
+    <td>rsyncプロトコルでのレポジトリへのアクセス</td>
+  </tr>
 </table>
 
 </div>
